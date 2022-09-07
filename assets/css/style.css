@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0d3748;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.social{
+font-size: 24px;
+/* position: fixed; */
+}
+
+.social-left{
+    position: fixed;
+    left: -40px;
+    z-index: 1;
+    bottom:98px;
+}
+
+.social-left>button{
+    border-radius: 28px;
+    padding: 8px 16px 8px 44px;
+}
+
+.social-right{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    right: 0;
+    z-index: 1;
+    bottom: 40px;
+}
+.social-right>button{
+    margin-bottom: 24px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+
+.header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    font-weight: 700;
+    height: 66px;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+}
+.header__navbar ul{
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.header__navbar img {
+    width: 50px;
+    height: 50px;
+}
+
+.header__navbar ul li{
+    list-style: none;
+    padding: 8px 32px;
+    border-radius: 18px;
+}
+
+.header__navbar ul li a{
+   text-decoration: none;
+   color: #0d3748;
+   position: relative;
+}
+
+.header__navbar--left{
+    width: 50%;
+}
+
+.header__navbar--right{
+    width: 50%;
+}
+
+.header__navbar ul li:hover{
+    background-color: #0d3748;
+
+}
+
+.header__navbar ul li:hover>a{
+        color: aliceblue;
+}
+
+.next-picture{
+    margin-top: 66px;
+    height: 840px;
+}
+
+.next-picture>.carousel-inner img{
+    position: relative;
+}
+
+.next-picture>.carousel-inner .content__btn--title{
+    position: absolute;
+    /* z-index: 1; */
+    top: 14%;
+    transform: translateY(50%);
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    font-size: 44px;
+    color: #fff;
+    background-color: black;
+    opacity: 0.6;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+.next-picture>.carousel-inner .content__btn--btn{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 26%;
+}
+.next-picture img{
+    height: 840px;
+    width: 100%;
+}
+
+.content{
+    padding: 16px 32px;
+    background-color: rgb(245, 237, 237);
+}
+
+.content__title{
+    font-size: 24px;
+    padding: 32px 16px;
+}
+
+.content__content{
+    margin-bottom: 48px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: antiquewhite;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 4%;
+}
+
+
+.content__btn{
+    padding: 8px 16px;
+    margin: 32px 0;
+    border-radius: 24px;
+    background-color: #0d3748;
+}
+.content__btn>a{
+  text-decoration: none;  
+  color: white;
+}
+.next-small{
+   
+    background-image: url(https://noithatmansion.vn/wp-content/uploads/2022/08/mansion-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+.next-small>.container{
+     position: relative;
+}
+
+.next-small>.container>p{
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: -38px;
+}
+
+.next-small a{
+    text-decoration: none;
+}
+
+.next-small>.container>div{
+    margin-top: 111px;
+}
+
+.footer{
+    background-color: #0d3748;
+}
+.footer h5,.footer p{
+    color: #fff;
+}
+
+/* mobile nav */
+
+.nav-bottum{
+    display: none;
+}
+
+.carousel-indicators{
+    z-index: 0;
+}
+
+.next-pic-mbl{
+    display: none;
+}
+
+.nav-mbl{
+    display: none;
+}
+
+.nav__bars-btn{
+    font-size: 28px;
+    color: #fff;
+    margin-left: 8px;
+    display: none;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .nav__overlay{
+    display: block;
+}
+.nav-input:checked ~ .nav__mobile{
+    transform: translateX(0%);
+}
+
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+.nav__mobile{
+    position: fixed;
+    top: 66px;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+}
+
+ol, ul {
+    padding-left: 1rem;
+}
+
+.nav__mobile-list{
+    margin-top: 24px;
+    
+
+}
+
+.nav__mobile-list li a{
+    font-size: 18px;
+    color: #0d3748;
+    font-weight: 600;
+}
+
+.nav__mobile-list li{
+    list-style: none;
+}
+
+.nav__mobile-link{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+}
+
+.nav__mobile-close{
+    position: absolute;
+    font-size: 1.4rem;
+    right: 1rem;
+    top: 1rem;
+}
+
+
+@media (max-width:1023px){
+    .nav__bars-btn {
+        display: block;
+    }
+    .nav__pc{
+        display: none;
+    }
+}
+
+@media (max-width:480px){
+    .header__navbar{
+        display: none;
+    }
+
+    .next-picture{
+        height: auto;
+    }
+
+    .next-picture img{
+        height: auto;
+    }
+
+    .header img{
+        width: 38px;
+    }
+
+    .nav-mbl{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        align-items: center;
+    }
+    .fa-tiktok{
+        font-size: 28px;
+    }
+
+    .next-pic-pc{
+        display: none;
+    }
+
+    .next-pic-mbl{
+        display: block;
+    }
+
+    .next-small>.container>p{
+        display: none;
+    }
+
+    .next-small>.container>div{
+        margin: 0;
+    }
+
+    .next-small{
+        height: auto;
+    }
+
+    .gg-map{
+        display: none;
+    }
+
+    .social-right>button{
+        display: none;
+    }
+    .social-left>button{
+        display: none;
+    }
+
+    .nav-bottum{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #0d3748;
+        z-index: 2;
+    }
+    .nav-bottum p,.nav-bottum i{
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-bottum a{
+        text-decoration: none;
+    }
+
+    .border-right{
+        border-right: 1px solid red;
+    }
+}
+
+@media (min-width:480px) and (max-width:768px){
+    
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    
+}

@@ -1,0 +1,30 @@
+.content-sp{
+    margin-top: 66px;
+}
+
+.content-sp img{
+    width: 100%;
+}
+
+.box-text{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.box-f{
+    display: flex;
+    align-items: center;
+}
+
+.title-h{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+.content-sp .box-text:hover>.content-h{
+    color: rgb(223, 223, 176);
+}
